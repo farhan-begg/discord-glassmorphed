@@ -8,15 +8,14 @@ import SendRoundedIcon from '@material-ui/icons/SendRounded';
 import HelpRoundedIcon from '@material-ui/icons/HelpRounded';
 
 
-function ChatHeader() {
+function ChatHeader({ channelName }) {
     return (
         <div className="chatHeader">
             <div className="chatHeader__left">
                 <h3>
                     <span className="chatHeader__hash">
-                        #
+                        {channelName}
                     </span>
-                    Test Channel Name
                 </h3>
             </div>
 

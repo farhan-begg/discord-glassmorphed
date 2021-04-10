@@ -4,6 +4,7 @@ import './Login.css'
 import { auth, provider } from './firebase'
 
 function Login() {
+    // uses firebase google for sign in
     const signIn = () => {
        auth.signInWithPopup(provider)
             .catch((error) => alert(error.message));

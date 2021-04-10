@@ -13,14 +13,16 @@ function App() {
   const user = useSelector(selectUser)
 
   useEffect(() => {
+    // everytime user logs in get the user
     auth.onAuthStateChanged((authUser) => {
       console.log("user is", authUser)
+      // if user is logged in
       if (authUser){
-        // the user is logged in
+        // dispatch allows to insert in redux(data layer)
         dispatch(
           login({
           uid: authUser.uid,
-          photo: authUser.photoUrl,
+          photo: authUser.photoURL,
           email: authUser.email,
           displayName: authUser.displayName,
         })
