@@ -13,7 +13,6 @@ import { Avatar } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 import db, { auth } from './firebase';
-
 function Sidebar() {
 
     const user = useSelector(selectUser)
@@ -48,7 +47,8 @@ function Sidebar() {
     }
   
     return (
-        <div className="sidebar">
+        <div className="sidebar__body">
+        <div className="sidebar" >
             <div className="sidebar__top">
                 <h3>Discord</h3>
                 <ExpandMoreIcon />    
@@ -109,7 +109,7 @@ function Sidebar() {
                 </div>
                     
             </div>
-
+            </div>
 
 
         </div>
