@@ -63,6 +63,7 @@ function Chat() {
 
 
     return (
+        <div className="chat__body">
         
         <div className="chat">
             <ChatHeader channelName={channelName} />
@@ -109,6 +110,7 @@ function Chat() {
 
 
             </div>
+        </div>
         </div>
     )
 }

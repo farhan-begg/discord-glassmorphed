@@ -22,22 +22,24 @@
 .chatHeader__right > .MuiSvgIcon-root {
     padding: 5px;
     cursor: pointer;
+    color: white;
 
 }
 
 
 .chatHeader__right > .MuiSvgIcon-root:hover{
-   color: white;
+   color: rgb(216, 4, 187);
 
 }
 
 .chatHeader__search {
     display: flex;
     align-items: center;
-    color: gray;
-    background-color: #2f3135;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
     border-radius: 3px;
     padding: 3px;
+    color: white;
 }
 
 .chatHeader__search > input {
@@ -45,4 +47,5 @@
     outline-width: 0;
     color: white;
     border: none;
+
 }

@@ -1,10 +1,27 @@
+.chat__body{
+
+    background-image:url("https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+
+}
+
+
+
 .chat {
     display: flex;
     flex-direction: column;
-    flex: 0.75;
+    flex: 1;
     background-color: #363a3f;
     height: 100vh;
-    width: 100%;;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px)
+
+ 
+
 }
 
 .chat__input {
@@ -17,6 +34,9 @@
     margin: 20px;
     border-top: 1px solid gray;
     background-color: #474b53;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px)
+
 
 }
 
